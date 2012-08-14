@@ -2,6 +2,7 @@ Dart-HTML5-canvas-game-sample
 =============================
 
 This is a simple exemple of how you can create a game with google Dart by interacting with a canvas.
+You can see the exemple live there : http://bit.ly/Pazlw2
 
 Basic FAQ :
 =============================
