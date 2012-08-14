@@ -1,32 +1,30 @@
-Dart-HTML5-canvas-game-sample
-=============================
+#Dart-HTML5-canvas-game-sample
 
 This is a simple exemple of how you can create a game with google Dart by interacting with a canvas.
 
 You can see the exemple live there : http://bit.ly/Pazlw2
 
-Basic FAQ :
-=============================
+##Basic FAQ :
 
-1. What is Dart ?
+###What is Dart ?
 Dart is a programming language created by google, still in alpha (or beta ?) stage.
 It is meant to be somewhere between scripting languages (like Javascript) and more strict languages like Java. The goal is to make people able to scale their application while keeping the power of scripting.
 More informations here : http://www.dartlang.org/
 
-2. Why Dart ?
+###Why Dart ?
+
 Don't know. I just thought it could be interesting to try it.
 
 
-Code explanation :
-=============================
+##Code explanation :
 
 If you have never made any games, you should read this :
 
-1. Spritesheet
+###Spritesheet
 In 2D games, we use spritesheets. A spritesheet is an image containing all the image corresponding to each position of the character (look at img/player.png and you'll understand). We draw a certain part of the spritesheet depending on the player's action to animate his avatar.
 Generally, the horizontal axis is for avancing in time, while the vertical is for separate animations (here : the four direction you can walk).
 
-2. Gameplay Loop
+###ameplay Loop
 A gameplayLoop makes the game able to run smoothly. Instead of moving each time you press a key, there is an infinite loop which continuously checks which keys you are pressing and updates the game accordingly.
 This loop calls the other main functions (which are my way of doing but you can create others) :
 
@@ -34,7 +32,7 @@ This loop calls the other main functions (which are my way of doing but you can 
 	animate : It manages... Animations. For exemple spritesheet management
 	render : All the drawing stuff
 
-3. Drawing
+###Drawing
 The drawing code can seem tricky :
 ctx.drawImage(img, imgSizeX * stateX, imgSizeY * stateY, imgSizeX, imgSizeY, x, y, imgSizeX, imgSizeY);
   /*
